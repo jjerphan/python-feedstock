@@ -166,6 +166,7 @@ if [[ "${CONDA_BUILD_CROSS_COMPILATION}" == "1" ]]; then
                            --host=${BUILD} \
                            --prefix=${BUILD_PYTHON_PREFIX} \
                            --with-ensurepip=no \
+                           --with-readline=editline \
                            --with-tzpath=${PREFIX}/share/zoneinfo \
                            --with-platlibdir=lib && \
       make -j${CPU_COUNT} && \
